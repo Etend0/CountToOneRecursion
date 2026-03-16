@@ -19,7 +19,7 @@ Console.Write("Enter a positive number: ");
 // Get the users input
 input = Console.ReadLine();
 // See if the user entered a valid input
-while (!int.TryParse(input, out choice) || choice > 0)
+while (!int.TryParse(input, out choice) && choice > 0)
 {
     Console.Write("Invalid number");
     // Re-Prompt the user for a number

@@ -80,6 +80,15 @@ static class Utility
                 // Call the function
                 return CountToOne(num, ref count);
             }
+            // Check if the number is divisible by 4
+            else if ((num % 4) == 0)
+            {
+                // Incremenet the counter
+                count++;
+                Console.WriteLine("The number is divisible by 4. Divide by 4");
+                // Divide the number by 2 and call the function
+                return CountToOne(num / 4, ref count);
+            }
             // Check if the number is even
             else if ((num % 2) == 0)
             {
@@ -111,6 +120,15 @@ static class Utility
                 num--;
                 // Call the function
                 return CountToOne(num, ref count);
+            }
+            // Check if the number is divisible by 4
+            else if ((num % 4) == 0)
+            {
+                // Incremenet the counter
+                count++;
+                Console.WriteLine("The number is divisible by 4. Divide by 4");
+                // Divide the number by 2 and call the function
+                return CountToOne(num / 4, ref count);
             }
             else if ((num % 2) == 0)
             {
